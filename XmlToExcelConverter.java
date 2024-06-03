@@ -48,7 +48,7 @@ public class XmlToExcelConverterClass {
         
 
         /* File xmlFile = File.createTempFile("substances", "tmp");
-        String xmlFileUrl = "http://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/public/?event=Execute.DownLoadXML&id=1";
+        String xmlFileUrl = "";
         URL url = new URL(xmlFileUrl);
         System.out.println("downloading file from " + xmlFileUrl + " ...");
         FileUtils.copyURLToFile(url, xmlFile);
