@@ -26,7 +26,7 @@ public class XmlToExcelConverterClass {
     private final static int REF_TYPE = 4;
     private final static int DEBTER = 5;
     private final static int REF_AMOUNT = 6;
-	private final static int VOUCHER_TYPE = 8;
+    private final static int VOUCHER_TYPE = 8;
 
 
 
@@ -38,7 +38,6 @@ public class XmlToExcelConverterClass {
 
     /**
      *
-     * Downloads a XML file, reads the substance and product values and then writes them to rows on an excel file.
      *
      * @throws Exception
      */
@@ -47,7 +46,7 @@ public class XmlToExcelConverterClass {
 
         
 
-        /* File xmlFile = File.createTempFile("substances", "tmp");
+        /* File xmlFile = File.createTempFile("REQUESTDATA", "tmp");
         String xmlFileUrl = "";
         URL url = new URL(xmlFileUrl);
         System.out.println("downloading file from " + xmlFileUrl + " ...");
@@ -76,7 +75,7 @@ public class XmlToExcelConverterClass {
                 String transactionType = element.getElementsByTagName("TRANSACTION_TYPE").item(0).getTextContent();
                 String voucherNo = element.getElementsByTagName("VOUCHER_NO").item(0).getTextContent();
                 String ref_No = element.getElementsByTagName("REF_NO").item(0).getTextContent();
-				String refType = element.getElementsByTagName("REF_TYPE").item(0).getTextContent();
+		String refType = element.getElementsByTagName("REF_TYPE").item(0).getTextContent();
                 String debter = element.getElementsByTagName("DEBTER").item(0).getTextContent();
                 String refAmount = element.getElementsByTagName("REF_AMOUNT").item(0).getTextContent();    
                 String voucherType = element.getElementsByTagName("VCHTYPE").item(0).getTextContent();
@@ -98,10 +97,10 @@ public class XmlToExcelConverterClass {
                         cell = row.createCell(DEBTER);
                         cell.setCellValue(debter);
                         
-						cell = row.createCell(REF_AMOUNT);
+			cell = row.createCell(REF_AMOUNT);
                         cell.setCellValue(refAmount);
                         
-						cell = row.createCell(VOUCHER_TYPE);
+			cell = row.createCell(VOUCHER_TYPE);
                         cell.setCellValue(voucherType);
 
                     }
